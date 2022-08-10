@@ -20,11 +20,6 @@ body {
     background-color: var(--clr-cream);
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 body, h1, h2, p {
@@ -55,7 +50,9 @@ p {
 
 button {
     background-color: var(--clr-green);
-    padding: 1.125em 7em;
+    padding: 1.125em 0;
+    width: 100%;
+    max-width: 300px;
     font-size: .875rem;
     line-height: 1rem;
     font-family: 'Montserrat', sans-serif;
@@ -63,7 +60,7 @@ button {
     border-radius: 8px;
     border: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 button:hover {
@@ -84,26 +81,6 @@ button:hover {
 
 .image--desktop {
     display: none;
-}
-
-@media screen and (min-width: 43.75rem) {
-    button {
-        padding: 1.125em 5em;
-    }
-
-    .card {
-        display: flex;
-    }
-
-    .image--mobile {
-        display: none;
-    }
-
-    .image--desktop {
-        display: block; 
-        width: 300px;
-        height: 100%;
-    }
 }
 
 .content {
@@ -160,4 +137,32 @@ button:hover {
     line-height: 1.25rem;
     text-align: center;
     width: 100%;
+}
+
+@media screen and (min-width: 43.75rem) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    button {
+        padding: 1.125em 5em;
+    }
+
+    .card {
+        display: flex;
+    }
+
+    .image--mobile {
+        display: none;
+    }
+
+    .image--desktop {
+        display: block; 
+        width: 300px;
+        height: 100%;
+    }
 }
