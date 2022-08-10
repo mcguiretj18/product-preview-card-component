@@ -119,16 +119,16 @@ button:hover {
     font-family: 'Fraunces', serif;
 }
 
-.font--lrg {
+.font-lrg {
     font-size: 2rem;
     line-height: 2rem;
 }
 
-.u--bold {
+.util-bold {
     font-weight: 700;
 }
 
-.u--uppercase {
+.util-uppercase {
     text-transform: uppercase;
 }
 
