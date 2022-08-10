@@ -165,6 +165,18 @@ button:hover {
         padding: 2rem;
     }
 
+    .category {
+        margin-bottom: 1.25rem;
+    }
+
+    .product {
+        margin-bottom: 1.5rem;
+    }
+
+    .description, .price-container {
+        margin-bottom: 1.875rem;
+    }
+
     .image--mobile {
         display: none;
     }
