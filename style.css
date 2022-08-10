@@ -1,0 +1,163 @@
+:root {
+    --clr-white: #FFFFFF;
+    --clr-cream: #F2EAE2;
+    --clr-grey: #6C7289;
+    --clr-green: #3D8168;
+    --clr-green-hover: #1A4032;
+    --clr-black: #1C232B;
+    --bp-desktop: 43.75rem; /* 700px */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--clr-cream);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+body, h1, h2, p {
+    margin: 0;
+}
+
+h1 {
+    color: var(--clr-black);
+    margin-bottom: 1rem;
+    max-width: 232px;
+}
+
+h2 {
+    font-size: 0.75rem;
+    color: var(--clr-grey);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--clr-grey);
+    font-size: .875rem;
+    line-height: 1.5rem;
+    width: 95%;
+    max-width: 237px;
+}
+
+button {
+    background-color: var(--clr-green);
+    padding: 1.125em 7em;
+    font-size: .875rem;
+    line-height: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--clr-white);
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+button:hover {
+    background-color: var(--clr-green-hover);
+}
+
+.card {
+    width: 95%;
+    max-width: 600px;
+    margin: 1.75em auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image--mobile {
+    width: 100%;
+}
+
+.image--desktop {
+    display: none;
+}
+
+@media screen and (min-width: 43.75rem) {
+    button {
+        padding: 1.125em 5em;
+    }
+
+    .card {
+        display: flex;
+    }
+
+    .image--mobile {
+        display: none;
+    }
+
+    .image--desktop {
+        display: block; 
+        width: 300px;
+        height: 100%;
+    }
+}
+
+.content {
+    background-color: var(--clr-white);
+    padding: 1.5rem;
+    margin-top: -3px;
+}
+
+.category {
+    letter-spacing: 5px;
+}
+
+.price-container {
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.special-price {
+    color: var(--clr-green);
+    margin-right: 1.25rem;
+}
+
+.full-price {
+    text-decoration-line: line-through;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: var(--clr-grey);
+}
+
+.cart-icon {
+    margin-right: 0.75rem;
+}
+
+.font-secondary {
+    font-family: 'Fraunces', serif;
+}
+
+.font--lrg {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.u--bold {
+    font-weight: 700;
+}
+
+.u--uppercase {
+    text-transform: uppercase;
+}
+
+.attribution {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    width: 100%;
+}
