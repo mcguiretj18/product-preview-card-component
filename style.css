@@ -162,6 +162,7 @@ button:hover {
         width: 100%;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
+        padding: 2rem;
     }
 
     .image--mobile {
