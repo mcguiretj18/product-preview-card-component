@@ -149,11 +149,17 @@ button:hover {
     }
 
     button {
-        padding: 1.125em 5em;
+        padding: 1.125em 4em;
+        max-width: 236px;
     }
 
     .card {
         display: flex;
+    }
+
+    .content {
+        max-width: 300px;
+        width: 100%;
     }
 
     .image--mobile {
