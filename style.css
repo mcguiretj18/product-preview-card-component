@@ -160,6 +160,8 @@ button:hover {
     .content {
         max-width: 300px;
         width: 100%;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 
     .image--mobile {
